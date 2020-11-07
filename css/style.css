@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #7fd5fd;
+    background-color:#77c5e9;
 }
 
 button{
@@ -58,8 +58,9 @@ label{
     width: 35vw;
     height: 35vw;
 
-    border : 5px  #60a1c0 solid;
+    border : 8px  #60a1c0 solid;
     border-radius: 10px;
+    box-shadow: 0 0 5px #548ca7;
 }
 
 .pixelR{
