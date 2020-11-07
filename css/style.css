@@ -14,6 +14,8 @@ button{
     font-size: 20px;
     font-weight: 200;
     box-shadow: 0 0 6px #548ca7;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 button:active{
@@ -42,10 +44,10 @@ label{
 
 
 #page{
-    height: 100%;
+
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding-top: 40px;
 }
 
 
@@ -53,10 +55,10 @@ label{
     background-color: white;
     display: flex;
     flex-direction: column;
-    width: 40vw;
-    height: 40vw;
+    width: 35vw;
+    height: 35vw;
 
-    border : 5px orange solid;
+    border : 5px  #60a1c0 solid;
     border-radius: 10px;
 }
 
@@ -89,4 +91,8 @@ label{
 
 #create{
     margin-top: 10px;
+}
+
+#button_grp{
+    margin-top: 20px;
 }

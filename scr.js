@@ -3,8 +3,15 @@ var holder_column = [];//document.createElement("div");
 var holder_row = [];
 var create = document.querySelector("#create");
 var input_s = document.querySelector("#size_inp");
-
+var black_btn = document.querySelector("#black");
+var rainbow_btn = document.querySelector("#random");
+var clear_btn = document.querySelector("#clear");
 var grid_size = 32;
+
+var black = 1;
+var color = 0;
+
+
 
 //Create main outer element
 holder = document.createElement("div");
@@ -48,7 +55,14 @@ createGrid(grid_size);
 //Changes color
 holder.addEventListener('mouseover' , changeColor);
 function changeColor(e){
-    e.target.style.backgroundColor = "black";
+    if(black == 1){
+        e.target.style.backgroundColor = "black";
+        
+
+    }
+    if(color == 1){
+        e.target.style.backgroundColor = `rgb(${parseInt(Math.random() * 254)} , ${parseInt(Math.random() * 254)},${parseInt(Math.random() * 254)})`;
+    }
 }
 
 
@@ -70,3 +84,20 @@ function empty_grid(){
     }
 }
 
+
+black_btn.addEventListener("click" , () =>{
+    console.log("black");
+    black = 1;
+    color = 0;
+});
+
+rainbow_btn.addEventListener("click" , () =>{
+    console.log("rainbow");
+    black = 0;
+    color = 1;
+})
+
+clear_btn.addEventListener("click" , () => {
+    empty_grid();
+    createGrid(grid_size);
+})
