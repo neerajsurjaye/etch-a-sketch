@@ -1,34 +1,33 @@
 body{
     margin: 0;
     padding: 0;
-    background-color:#77c5e9;
+    background-color:#3E4364;
 }
 
 button{
     border : 0px;
-    background: #60a1c0;
-    color:white;
+    background: #19CB94;
+    color:#25293E;
     padding: 15px 60px;
     border-radius: 500px;
-    font-family: "Arial Black", Gadget, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
-    font-weight: 200;
-    box-shadow: 0 0 6px #548ca7;
+    box-shadow: 2px 2px 6px #2d3047;
     margin-right: 5px;
     margin-left: 5px;
+    font-weight:600;
 }
 
 button:active{
-    box-shadow: 0 0 3px #548ca7;
-}
+    box-shadow: 1px 1px 0px #2d3047;}
 
 input{
     border: 0px;
-    background-color:  #60a1c0;
+    background-color:  #19CB94;
     padding: 10px 20px;
     border-radius: 10px;
-    color:white;
-    box-shadow: inset 0 0 10px #548ca7;
+    color:#2d3047;
+    box-shadow: inset 0 0 2px #2d3047;
     width: 80px;
     font-weight: 800;
     font-size: 15px;
@@ -38,7 +37,7 @@ label{
     font-family: "Arial Black", Gadget, sans-serif;
     font-size: 20px;
     font-weight: 200;
-    color:#60a1c0;
+    color:#19CB94;
     
 }
 
@@ -58,15 +57,15 @@ label{
     width: 35vw;
     height: 35vw;
 
-    border : 8px  #60a1c0 solid;
+    border : 8px  #2d3047 solid;
     border-radius: 10px;
-    box-shadow: 0 0 5px #548ca7;
+    box-shadow: 0 0 5px #181925;
 }
 
 .pixelR{
     background-color: white;
     width: 100%;
-    border : 1px grey solid;
+    border : 1px #2d3047 solid;
 }
 
 .pixelR:hover{
@@ -96,4 +95,8 @@ label{
 
 #button_grp{
     margin-top: 20px;
+}
+
+.cls-button{
+    background-color: #F06A73;
 }
